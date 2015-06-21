@@ -3,7 +3,7 @@ from youtuber.models import YoutubeSource
 
 
 class YoutubeSourceAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('id', 'name', 'type', 'identifier')
 
 
 admin.site.register(YoutubeSource, YoutubeSourceAdmin)
