@@ -102,7 +102,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-YOUTUBE_DEVELOPER_KEY = 'AIzaSyDnAk55eOofKM5qeJ-ykbBq8ycVuGYl4uc'
+BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+
+YOUTUBE_DEVELOPER_KEY = '<YOUR_APP_ID>'
+YOUTUBE_MAX_RESULTS = 10
+YOUTUBE_FOLLOW_PAGINATION = True
+YOUTUBE_MAX_PAGINATION = 10
 YOUTUBE_ENTRY_PIPELINES = [
     'example_project.pipelines.YoutubePipeline'
 ]
