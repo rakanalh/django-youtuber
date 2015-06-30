@@ -10,12 +10,13 @@ setup(
     packages=[
         'youtuber',
         'youtuber/management',
-        'youtuber/migrations'
+        'youtuber/migrations',
+        'youtuber/tests'
     ],
     include_package_data=True,
 
     # Details
-    url='https://github.com/rakanalh/django-pushy',
+    url='https://github.com/rakanalh/django-youtuber',
 
     license='LICENSE.txt',
     description='Django app for fetching videos from channels or playlists.',
