@@ -35,6 +35,18 @@ The youtube_source instance is a [YoutubeSource](django-youtuber/tree/master/you
 django_youtuber to identify where the video came from. The video instance is a [YoutubeFeedItem](django-youtuber/tree/master/youtuber/client.py)
 that contains the list of attributes extracted for a single youtube video.
 
+Celery
+------
+
+Don't also forget to configure celery as the application distributes source among different workers to fetch the list 
+of videos from all sources in parallel.
+
+    BROKER_URL = 'amqp://guest:guest@localhost:5672/'
+    
+You can also register task
+[youtuber_start](django-youtuber/tree/master/youtuber/tasks.py) as a scheduled task and run celery beat to make that 
+every given time duration.
+
 License
 -------
 
