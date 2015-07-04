@@ -18,7 +18,7 @@ setup(
     # Details
     url='https://github.com/rakanalh/django-youtuber',
 
-    license='LICENSE.txt',
+    license='LICENSE',
     description='Django app for fetching videos from channels or playlists.',
     long_description=open('README.md').read(),
 
